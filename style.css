@@ -19,6 +19,10 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 25px 150px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 100000;
 }
 nav .center ul {
   display: flex;
@@ -29,24 +33,75 @@ nav .right a {
   color: white;
   background: HSL(192, 69%, 51%);
   background: linear-gradient(15deg, rgb(44, 182, 216) 32%, rgb(50, 210, 93) 63%);
-  padding: 10px 35px;
+  padding: 10px 25px;
   border-radius: 50pc;
 }
 
-header {
-  padding: 25px 135px;
+header .left {
+  padding: 170px 0;
+  padding-left: 150px;
+  width: 37%;
 }
 header .left h1 {
+  font-size: 3rem;
   font-weight: normal;
   margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
 }
 header .left p {
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 header .left a {
   color: white;
   background: HSL(192, 69%, 51%);
   background: linear-gradient(15deg, rgb(44, 182, 216) 32%, rgb(50, 210, 93) 63%);
-  padding: 10px 35px;
+  padding: 10px 25px;
   border-radius: 50pc;
+}
+
+header {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  height: 650px;
+}
+header .left {
+  width: 37%;
+}
+header .right {
+  width: 63%;
+  background-image: url(images/bg-intro-desktop.svg);
+  background-position: 0px -240px;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+}
+header .right img {
+  width: 600px;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  right: -100px;
+}
+
+.bottom {
+  padding: 60px 150px;
+  background-color: hsl(220, 16%, 96%);
+}
+.bottom h1 {
+  margin-bottom: 30px;
+}
+.bottom p {
+  line-height: 30px;
+}
+.bottom .bass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.bottom .bass .class {
+  width: 20%;
+  gap: 60px;
 }/*# sourceMappingURL=style.css.map */

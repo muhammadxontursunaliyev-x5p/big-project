@@ -22,6 +22,10 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 25px 150px;
+    position: fixed;
+    width: 100%  ;
+    background-color: white;
+    z-index: 100000;
 
     .center {
         ul {
@@ -35,29 +39,89 @@ nav {
             color: white;
             background: HSL(192, 69%, 51%);
             background: linear-gradient(15deg, rgba(44, 182, 216, 1) 32%, rgba(50, 210, 93, 1) 63%);
-            padding: 10px 35px;
+            padding: 10px 25px;
             border-radius: 50pc;
         }
     }
 
 }
 header{
-    padding: 25px 135px;
+    // margin-top: 100px;
+    
+     
     .left{
+        padding: 170px 0;
+        padding-left: 150px;
+        width: 37%;
         h1{
+            font-size: 3rem;
             font-weight: normal;
             margin-bottom: 20px;
+            color: hsl(233, 26%, 24%);
         }
         p{
-            margin-bottom: 40px;
+           margin-top: 20px;
+           margin-bottom: 40px;
         }
         a{
             color: white;
             background: HSL(192, 69%, 51%);
             background: linear-gradient(15deg, rgba(44, 182, 216, 1) 32%, rgba(50, 210, 93, 1) 63%);
-            padding: 10px 35px;
+            padding: 10px 25px;
             border-radius: 50pc;
 
+        }
+    }
+}
+header{
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    height: 650px;
+    
+    .left{
+        width: 37%;
+    }
+    .right{
+        width: 63%;
+        background-image: url(images/bg-intro-desktop.svg);
+        
+        background-position: 0px -240px;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: visible;
+        position: relative;
+       
+        
+        img{
+            width: 600px;
+            position: absolute;
+            z-index: 1;
+            top: -50px;
+            right: -100px;
+           
+        }
+        
+    }
+}
+.bottom{
+    padding: 60px 150px;
+    background-color:  hsl(220, 16%, 96%);
+    h1{
+        margin-bottom: 30px;
+    }
+    p{
+        line-height: 30px;
+    }
+
+    .bass{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        .class{
+            width: 20%;
+            gap: 60px;
+            
         }
     }
 }
